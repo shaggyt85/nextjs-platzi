@@ -1,7 +1,7 @@
-import React from 'react'
-import OrderItem from '@components/OrderItem'
-import Head from 'next/head'
-import styles from '@styles/Checkout.module.scss'
+import React from 'react';
+import OrderItem from '@components/OrderItem';
+import Head from 'next/head';
+import styles from '@styles/Checkout.module.scss';
 
 const Checkout = () => {
   return (
@@ -26,7 +26,7 @@ const Checkout = () => {
         </div>
         </div>
         </>
-  )
-}
+  );
+};
 
-export default Checkout
+export default Checkout;

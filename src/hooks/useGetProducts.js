@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const useGetProducts = (API) => {
     const [products, setProducts] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    
 
     useEffect(() => {
         (async () => {
@@ -13,12 +13,12 @@ const useGetProducts = (API) => {
             } catch (error) {
                 console.log(error);
             } finally {
-                setIsLoading(false);
+                console.log("Products fetched");
             }
         })();
-    }, []);
+    }, [API]);
     
     return products ;
-}
+};
 
 export default useGetProducts;

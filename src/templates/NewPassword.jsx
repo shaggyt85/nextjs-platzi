@@ -1,12 +1,14 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import '@styles/NewPassword.scss';
 import logo_yard_sale from '@logos/logo_yard_sale.svg';
+import Image from 'next/image';
 
 const NewPassword = () => {
 	return (
 		<div className="NewPassword">
 			<div className="NewPassword-container">
-				<img src={logo_yard_sale} alt="logo" className="logo" />
+				<Image src={logo_yard_sale} alt="logo" className="logo" />
 				<h1 className="title">Create a new password</h1>
 				<p className="subtitle">Enter a new passwrd for yue account</p>
 				<form action="/" className="form">
