@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@styles/menu.module.scss';
+import styles from '@styles/Menu.module.scss';
 import Link from 'next/link';
 
 const Menu = () => {
